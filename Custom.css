@@ -1,0 +1,48 @@
+.imgKhan{
+    margin-top: 55px;
+    }
+.parText{
+    font-size:1.2em;
+    line-height:1.5;
+    padding: 1.5em;
+    border: solid gray;
+    border-radius: 6px;
+    }
+.projSection{
+    border-bottom-style:solid;
+    padding-bottom:2em;
+    padding-top:2em;
+    }
+.endSec{
+    border-bottom-style:solid;
+    margin-top:1em;
+    }
+.ulSize{
+    font-size:1.5em;
+    }
+.mainTitleRRR{
+    margin-top:2.4em;
+    margin-bottom:1.5em;
+}
+.footResumeRRR{
+    margin-top:1.5em;
+}
+.resumeTitlesRRR{
+    padding-left:5px;
+    border-left: 4px solid blue;
+    background-color:lightgrey;
+}
+#projTitle{
+    border-bottom-style:solid;
+    border-top-style:solid;
+    border-bottom-color:orange;
+    border-top-color:orange;
+}
+#greyBackground{
+    background-color:lightgrey;
+}
+#footer{
+    background-color:lightgrey;
+    padding-bottom:0;
+    padding-top:0;
+}
