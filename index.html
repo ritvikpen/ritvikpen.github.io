@@ -11,12 +11,33 @@
 	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap">
 	  <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
 	  
+	  <script src="js/jquery-3.4.1.min.js"></script>
+	  
 	</head>
 	
 	<body>
-	  
+	  <!---
+    <navbar class="closed">
+      
+    </navbar>
+    -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Resume</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    
+    <div class="container-icon" onclick="openNav()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    
 	  <header>
-	    
 	    <div>
         <h1 class="text-center mainTitle">RI T </h1>
         <h1 class="text-center mainTitle">V IK</h1>
@@ -28,6 +49,8 @@
 	      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
 	  </div>
+	  
+	  <script src="js/index.js"></script>
 	</body>
 
 </html>
