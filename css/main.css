@@ -3,7 +3,10 @@
 
 html{
   background-color: #000000;
+  overflow-x: hidden;
 }
+
+
 
 body{
   background-color: #000000;
@@ -82,6 +85,8 @@ body{
 
 /* Home Page - Landing */
 
+
+
 header{
   height: 100vh;
   width: 100vw;
@@ -98,14 +103,17 @@ header{
   */
   background-size: cover;
   margin-bottom: 30px;
-  font-size: 3em;
+  font-size: 4vw;
   z-index: 1;
 }
 
 .mainTitle{
   color: #B82601;
-  font-size: 4em;
   font-family: "Monoton", cursive;
+  font-size: 300px;
+  font-size: 250px;
+  font-size: calc(200px + (300 - 200) * ((100vw - 320px) / (1440 - 300)));
+
 }
 
 #border-box{
@@ -117,14 +125,30 @@ header{
 /* Home Page - Content */
 
 .title{
-  font-size: 3.5vw;
+  font-size: 60px;
+  font-size: 40px;
+  font-size: calc(40px + (60 - 40) * ((100vw - 320px) / (1440 - 60)));
   color: white;
   padding-left: .6em;
+  margin:0;
   border-left: 20px solid #B82601;
 }
 
 .paragraph{
-  font-size: 1.7vw;
+  font-size: calc(30px + (35 - 30) * ((100vw - 320px) / (1440 - 35)));
   margin-left: 1.7em;
   color: white;
 }
+
+/*
+
+Font Scaling
+
+https://css-tricks.com/snippets/css/fluid-typography/
+
+font-size: calc([min size] + ([max size] - [min size]) * ((100vw - [min viewport width]) / ([max viewport width] - [min viewport width])));
+  
+font-size: calc(min px + (max - min) * ((100vw - 320px) / (1440 - max)));
+
+
+*/
