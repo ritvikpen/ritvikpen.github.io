@@ -1,15 +1,90 @@
 /* General */
 
-
 html{
   background-color: #000000;
   overflow-x: hidden;
+  width: 100vw;
 }
-
-
 
 body{
   background-color: #000000;
+}
+
+.down-arrow{
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #B82601;
+}
+
+.center{
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+}
+
+/* Text */
+
+.pageTitle{
+  margin-bottom: 0;
+  border-bottom: solid 20px #B82601;
+  color: #EFEFEF;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: calc(100px + (150 - 100) * ((100vw - 320px) / (1440 - 150)));
+}
+
+.title{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: calc(40px + (60 - 40) * ((100vw - 320px) / (1440 - 60)));
+  color: white;
+  padding-left: .6em;
+  margin:0;
+  margin-top: 5vh;
+}
+
+.subtitle{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: calc(30px + (35 - 30) * ((100vw - 320px) / (1440 - 35)));
+  color: white;
+  padding-left: .6em;
+  margin:0;
+  margin-top: 5vh;
+}
+
+.leftBorder{
+  border-left: 20px solid #B82601;
+}
+
+.paragraph{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: calc(30px + (35 - 30) * ((100vw - 320px) / (1440 - 35)));
+  margin-left: 1.7em;
+  color: #EFEFEF;
+}
+
+/* Link */
+
+.generallink {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 3px solid #fff;
+  -moz-transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+  -webkit-transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+  transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+}
+
+.generallink:hover {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  -moz-transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+  -webkit-transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
+  transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
 }
 
 
@@ -37,7 +112,7 @@ body{
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.85);
+  background-color: rgba(0,0,0, 0.95);
   overflow-x: hidden;
   transition: 0.5s;
   z-index: 2;
@@ -82,10 +157,7 @@ body{
   }
 }
 
-
 /* Home Page - Landing */
-
-
 
 header{
   height: 100vh;
@@ -95,60 +167,54 @@ header{
   justify-content: center;
   background-color: #000000;
   background-image: linear-gradient(#000000, #0E0B16);
-
-  /*
-  charcoal: #373737
-  void: #0E0B16
-  nice white: #EFEFEF
-  */
   background-size: cover;
   margin-bottom: 30px;
-  font-size: 4vw;
-  z-index: 1;
 }
 
 .mainTitle{
   color: #B82601;
   font-family: "Monoton", cursive;
-  font-size: 300px;
-  font-size: 250px;
   font-size: calc(200px + (300 - 200) * ((100vw - 320px) / (1440 - 300)));
-
 }
 
 #border-box{
   border: 10px solid #B82601;
   padding: 10px;
-  
 }
 
-/* Home Page - Content */
+/* About Page */
 
-.title{
-  font-size: 60px;
-  font-size: 40px;
-  font-size: calc(40px + (60 - 40) * ((100vw - 320px) / (1440 - 60)));
-  color: white;
-  padding-left: .6em;
-  margin:0;
-  border-left: 20px solid #B82601;
+#aboutSentence{
+  margin-top: 5vh;
 }
 
-.paragraph{
-  font-size: calc(30px + (35 - 30) * ((100vw - 320px) / (1440 - 35)));
-  margin-left: 1.7em;
-  color: white;
+#student{
+  visibility: hidden;
+}
+
+#aboutPar{
+  visibility: hidden;
+  height:0;
 }
 
 /*
+<---General-Info--->
 
-Font Scaling
 
-https://css-tricks.com/snippets/css/fluid-typography/
+COLORS:
 
-font-size: calc([min size] + ([max size] - [min size]) * ((100vw - [min viewport width]) / ([max viewport width] - [min viewport width])));
+  charcoal: #373737
+  void: #0E0B16
+  nice white: #EFEFEF
+  orange: #B82601
+
+
+FONT SCALING:
+
+  from: https://css-tricks.com/snippets/css/fluid-typography/
+
+  abstract: font-size: calc([min size] + ([max size] - [min size]) * ((100vw - [min viewport width]) / ([max viewport width] - [min viewport width])));
   
-font-size: calc(min px + (max - min) * ((100vw - 320px) / (1440 - max)));
-
+  custom: font-size: calc(min px + (max - min) * ((100vw - 320px) / (1440 - max)));
 
 */
