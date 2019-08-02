@@ -10,12 +10,28 @@ body{
   background-color: #000000;
 }
 
-.down-arrow{
+.blue-down-arrow{
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #B82601;
+  border-top: 20px solid #5680E9;
+}
+
+.green-down-arrow{
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #53900F;
+}
+
+.yellow-down-arrow{
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #F79E02;
 }
 
 .center{
@@ -24,11 +40,14 @@ body{
   left: 50%;
 }
 
+#blue{
+  color: #5680E9;
+}
+
 /* Text */
 
 .pageTitle{
   margin-bottom: 0;
-  border-bottom: solid 20px #B82601;
   color: #EFEFEF;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -41,6 +60,7 @@ body{
   font-size: calc(40px + (60 - 40) * ((100vw - 320px) / (1440 - 60)));
   color: white;
   padding-left: .6em;
+  padding-left: 2vw;
   margin:0;
   margin-top: 5vh;
 }
@@ -49,14 +69,36 @@ body{
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: calc(30px + (35 - 30) * ((100vw - 320px) / (1440 - 35)));
-  color: white;
-  padding-left: .6em;
-  margin:0;
-  margin-top: 5vh;
+  color:white;
+  padding-left: 4vw;
 }
 
-.leftBorder{
+.leftBorderOrange{
   border-left: 20px solid #B82601;
+}
+
+.leftBorderBlue{
+  border-left: 20px solid #5680E9;
+}
+
+.leftBorderGreen{
+  border-left: 20px solid #53900F;
+}
+
+.leftBorderYellow{
+  border-left: solid 20px #F79E02;
+}
+
+.bottomBorderBlue{
+  border-bottom: solid 20px #5680E9;
+}
+
+.bottomBorderGreen{
+  border-bottom: solid 20px #53900F;
+}
+
+.bottomBorderYellow{
+  border-bottom: solid 20px #F79E02;
 }
 
 .paragraph{
@@ -64,6 +106,14 @@ body{
   font-weight: 300;
   font-size: calc(30px + (35 - 30) * ((100vw - 320px) / (1440 - 35)));
   margin-left: 1.7em;
+  color: #EFEFEF;
+}
+
+.projectPar{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: calc(25px + (30 - 25) * ((100vw - 320px) / (1440 - 30)));
+  margin-left: 4vw;
   color: #EFEFEF;
 }
 
@@ -116,11 +166,13 @@ body{
   overflow-x: hidden;
   transition: 0.5s;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .overlay-content {
   position: relative;
-  top: 25%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -134,6 +186,11 @@ body{
   color: white;
   display: block;
   transition: 0.3s;
+  
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: calc(40px + (60 - 40) * ((100vw - 320px) / (1440 - 60)));
+  
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -182,6 +239,26 @@ header{
   padding: 10px;
 }
 
+/* Footer */
+
+footer{
+  color: white;
+}
+
+footer i{
+  font-size: calc(35px + (40 - 35) * ((100vw - 320px) / (1440 - 40)));
+  padding-bottom: 3vh;
+  margin-right: 10px;
+}
+
+footer a{
+  color:white;
+}
+
+footer a:hover{
+  color:white;
+}
+
 /* About Page */
 
 #aboutSentence{
@@ -195,6 +272,31 @@ header{
 #aboutPar{
   visibility: hidden;
   height:0;
+}
+
+#aboutHint{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: calc(30px + (35 - 30) * ((100vw - 320px) / (1440 - 35)));
+  color: white;
+  padding-left: .6em;
+  margin:0;
+  margin-top: 5vh;
+}
+
+
+/* Projects Page */
+
+.projContainer img {
+  width: 40vw;
+  height: auto;
+  border-radius: 35px;
+}
+
+.projContainer{
+  border-bottom: solid rgba(256,256,256,0.2) 5px;
+  margin-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 /*
