@@ -10,13 +10,13 @@ var about_loaded = true;
 
 function showAbout(subject){
   if(about_loaded){
-    $("#aboutHint").css("visibility", "hidden").html(" ");
+    $("#aboutHint").css("visibility", "hidden").css("padding",0).html(" ");
     
-    $("#aboutContainer").html("<h1 class='title leftBorderBlue' id='aboutTitle'></h1><p class = 'paragraph' id='aboutBody'></p>");
+    $("#aboutContainer").css("padding-bottom", "5vh").html("<h1 class='title leftBorderBlue' id='aboutTitle'></h1><p class = 'paragraph' id='aboutBody'></p>");
     
     if(subject=="student"){
       $("#aboutTitle").html("Student");
-      $("#aboutBody").html("I am a Junior at Dublin High School. I am currently enrolled in AP Biology, AP Calculus AB, AP Computer Science Applications, Honors English 11, Honors Medical Interventions, and U.S. History. My cummulative GPA is 3.9. I am a member of my school's Biomedical Academy due to my interest in pursuing a career in that field. Click on the other links to see the extracurricular and club activities I am involved in, both inside and outside of school.");
+      $("#aboutBody").html("I am a Junior at Dublin High School. I am currently enrolled in AP Biology, AP Calculus AB, AP Computer Science Applications, Honors English 11, Honors Medical Interventions, and U.S. History. My cummulative GPA is 4.0. I am a member of my school's Biomedical Academy due to my interest in pursuing a career in that field. Click on the other links to see the extracurricular and club activities I am involved in, both inside and outside of school.");
     } else if(subject == "writer"){
       $("#aboutTitle").html("Writer");
       $("#aboutBody").html("I write for a Science and Technology focused website called <a href='#' class='generallink'>Tech Archives</a>. I was also one of the developers that created the site. The website runs articles written by other students in my school throught the Tech Archives club. I am one of the Board Members who helps moderate content, update the site, and organize club meetings/members.");
