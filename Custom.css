@@ -1,0 +1,134 @@
+/* ---------NEW---------- */
+
+/* -------UNIVERSAL-------*/
+.whiteText{
+    color:rgba(255,255,255,1);
+}
+
+.noBottomMargin{
+    margin-bottom: 0;
+}
+.noTopMargin{
+    margin-top:0;
+}
+
+.homeNavbar{
+    color:black;
+    background-color: rgba(240,248,255,0.5);
+    padding-left:5vw;
+}
+
+.scrollNavbar{
+    color:black;
+    background-color: rgba(255,255,255,1);
+    padding-left: 5vw;
+}
+
+.navbarMargin{
+    margin-right:5vw;
+}
+
+.black{
+    color:black;
+}
+
+.whiteBackground{
+    background-color: white;
+}
+
+.marker{
+    font-family: 'Permanent Marker', cursive;
+}
+/* HOME */
+.fullscreen{
+    padding-top: 7vh;
+    padding-bottom: 20vh;
+}
+
+.mountainBackground{
+    background-image: url(Images/mountains.jpg);
+    background-size: cover;
+}
+
+.indexIcon{
+    margin-top: 15vh;
+    padding-top:0.8em;
+    padding-bottom: 1em;
+    margin-left:3.7rem;
+    margin-right: 3.7rem;
+    background-color: rgba(255,255,255,0.6)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OLD */
+.footResumeRRR{
+    margin-top:1.5em;
+}
+
+.sameLine{
+    display: inline;
+}
+#largerText{
+    font-size:3em;
+}
+/* END UNIVERSAL*/
+
+/* ABOUT_ME.html*/
+
+.bottomPadding{
+  padding-bottom: 2em;
+}
+
+/* END ABOUT_ME.html */
+
+
+.imgKhan{
+    margin-top: 55px;
+    }
+.parText{
+    font-size:1.2em;
+    line-height:1.5;
+    padding: 1.5em;
+    border: solid gray;
+    border-radius: 6px;
+    }
+.projSection{
+    border-bottom-style:solid;
+    padding-bottom:2em;
+    padding-top:2em;
+    }
+.endSec{
+    border-bottom-style:solid;
+    margin-top:1em;
+    }
+.ulSize{
+    font-size:1.5em;
+    }
+
+
+.resumeTitlesRRR{
+    padding-left:5px;
+    border-left: 4px solid blue;
+    background-color:lightgrey;
+}
+
+
+
+#projTitle{
+    border-bottom-style:solid;
+    border-top-style:solid;
+    border-bottom-color:orange;
+    border-top-color:orange;
+}
