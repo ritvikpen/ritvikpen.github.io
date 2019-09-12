@@ -217,13 +217,13 @@ body{
 /* Home Page - Landing */
 
 header{
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #000000;
-  background-image: linear-gradient(#000000, #0E0B16);
+  background-image: linear-gradient(#000000, #0E0B16, 90deg);
   background-size: cover;
   margin-bottom: 30px;
 }
