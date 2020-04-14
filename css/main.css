@@ -27,6 +27,12 @@
   transition: all cubic-bezier(0.2, 1, 0.2, 1) 0.4s;
 }
 
+.white-text .generallink{
+  color: white;
+  border-bottom: 3px solid white;
+
+}
+
 /* General */
 .blue_background{
   background-color: #0099ff;
@@ -42,9 +48,21 @@ html{
   scroll-behavior: smooth;
 }
 
+
+
+/* Projects */
+#project_tab img{
+  margin-bottom: 6vh;
+}
+
+.project-links{
+  margin-bottom: 12vh;
+}
+
+
 /* Specific Stuff */
 #blue_wave{
-  margin-bottom: -8px;
+  margin-bottom: -2vh;
 }
 
 #blue_wave_bottom{
@@ -59,7 +77,26 @@ html{
   margin-bottom: 3vh;
 }
 
-center{
-  margin-bottom: 10vh;
+@media only screen and (min-width: 1440px) {
 
+  #resume_tab{
+    text-align: right;
+  }  
+
+  #resume_tab div{
+    margin-top: 18vh;
+    padding-right: 6vw;
+  }
+}
+
+#gfr_site{
+  margin-top: 6vh;
+}
+
+#about_tab img{
+  margin-bottom: -3vh;
+}
+
+#bottom_link{
+  margin-bottom: 10vh;
 }

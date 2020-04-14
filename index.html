@@ -4,14 +4,39 @@
     
     <meta charset="UTF-8">
     <title>Ritviksiddha Penchala</title>
-    
+    <link rel="icon" type="image/png" href="res/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="res/img/favicon-16x16.png" sizes="16x16" />
+
     <link rel="stylesheet" type = "text/css" href="css/animate.css">
     <link rel="stylesheet" type = "text/css" href="css/materialize.min.css">
-	  <link rel="stylesheet" href="css/main.css">
+	  <link rel="stylesheet" type = "text/css" href="css/main.css">
 
     <script src="js/jquery-3.4.1.min.js"></script>
     
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 15px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(73, 182, 255); 
+      }
+
+      /* Handle on hover
+      ::-webkit-scrollbar-thumb:hover{
+        background: rgb(0, 153, 255);
+      }
+      */
+      </style>
 	</head>
 	
 	<body>
@@ -23,10 +48,10 @@
           <h1 class="landing-text">Hi! I'm Ritvik.</h1>
           <h4 class=" landing-text">I'm a student, developer, and aspiring medical professional.</h4>
           
-          <h4 class="landing-text">Learn more <a class="generallink" href="#about_tab">about me</a>,
+          <h4 class="landing-text">Browse this website portfolio to learn more <a class="generallink" href="#about_tab">about me</a>,
           check out my <a class="generallink" href="#project_tab">projects</a>,
           view my <a class="generallink" href="#resume_tab">resume</a>,
-          or <a class="generallink" href="#contact_tab">contact me</a> about anything else.</h4>
+          or go ahead and <a class="generallink" href="#contact_tab">contact me</a> about anything else.</h4>
           
         </div>
       </div>
@@ -36,11 +61,11 @@
     <div class="blue_background">
       <div class="container">
         <div class="row" id="about_tab">
-          <img src="res/img/ritprofile.svg" class="col s12 m6 l4 center">
+          <img src="res/img/ritprofile.svg" class="col s12 m6 xl4 center">
           <div class="col s12 xl8 white-text">
             <h1>About Me</h1>
             <h5>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              First off, my actual name is Ritviksiddha Penchala, but it was too long to fit up top so I shortened it.
             </h5>
             <h5>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -58,15 +83,48 @@
       <div class="row">
         <div class="col s12" id="project_tab">
           <h1>Projects</h1>
-          <h5>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </h5>
-          <h5>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </h5>
-          <h5>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </h5>
+          <div class="row" id="gfr_site">
+            <img src="res/img/undraw_click_here_2li1.svg" class="col s12 m8 xl4 center">
+            <div class="col s12 xl8">
+              <h4>Gael Force Robotics Website</h4>
+              <h5><i>Lead Developer from 2017 - Current</i></h5>
+              <h5>
+                A website to showcase my robotics team (team 5327), provide resources for members, network to other VRC teams, and write in our team blog.
+              </h5>
+              <h5 class="project-links">
+                <a href="#" class="generallink">View Site</a> | 
+                <a href="#" class="generallink">Learn More</a>
+              </h5>
+            </div>
+          </div>
+          <div class="row">
+            <img src="res/img/undraw_mobile_interface_wakp.svg" class="col s12 m8 xl4 center" id="tap_test_img">
+            <div class="col s12 xl8">
+              <h4>Tap Test App</h4>
+              <h5><i>Developer from August 2018 - December 2018</i></h5>
+              <h5>
+                An Android application created to assist a Stanford MedX research group in their work on Alzheimer's. The app provides assistance with the data collection and statistical analysis.
+              </h5>
+              <h5 class="project-links">
+                <a href="#" class="generallink">View App</a> | 
+                <a href="#" class="generallink">Learn More</a>
+              </h5>
+            </div>
+          </div>
+          <div class="row">
+            <img src="res/img/karate_site.svg" class="col s12 m8 xl4 center" id="tap_test_img">
+            <div class="col s12 xl8">
+              <h4>WCWMA Pleasanton Website</h4>
+              <h5><i>Developer/Designer from August 2019 - Current</i></h5>
+              <h5>
+                A website to advertise for my local karate school: West World Martial Arts Pleasanton.
+              </h5>
+              <h5 class="project-links">
+                <a href="#" class="generallink">View Site</a> | 
+                <a href="#" class="generallink">Learn More</a>
+              </h5>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -74,42 +132,32 @@
     <img src="res/wave.svg" id="blue_wave">
     <div class="blue_background">
       <div class="container">
-        <div class="col s12  white-text" id="resume_tab">
-          <h1>Resume</h1>
-          <h5>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </h5>
-          <h5>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </h5>
-          <h5>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </h5>
+        <div class="row" id="resume_tab">
+          <div class="col s12 m6 white-text">
+            <h1>Resume</h1>
+            <h5>
+              Click <a class="generallink" href="#">here</a> to view my resume.
+            </h5>
+          </div>
+          <img src="res/img/undraw_resume_1hqp.svg" class="col s12 m6 center">
         </div>
       </div>
     </div>
     <img src="res/wave_inverse.svg" id="blue_wave_bottom">
 
-    <div class="container">
-      <div class="col s12" id="contact_tab">
-        <h1>Contact Me</h1>
-        <h5>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </h5>
-        <h5>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </h5>
-        <h5>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </h5>
+    <div class="center">
+      <div class="container">
+        <div class="col s12" id="contact_tab">
+          <h1>Contact Me</h1>
+          
+          <h4>ritviksiddha@gmail.com</h4>
+          <h4>408 - 981 - 9355</h4>
+        </div>
       </div>
+      <h4  id="bottom_link">
+        <a class="generallink" href="#">go back to the top</a>
+      </h4>
     </div>
-
-    <center>
-      <h4>
-      <a class="generallink" href="#">go back to the top</a>
-    </h4>
-    </center>
 
     
     <script src="js/materialize.min.js"></script>
