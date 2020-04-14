@@ -30,7 +30,11 @@
 .white-text .generallink{
   color: white;
   border-bottom: 3px solid white;
+}
 
+.white-text .generallink:hover {
+  color: white;
+  border-bottom: 3px solid #0099ff;
 }
 
 /* General */
@@ -75,6 +79,10 @@ html{
 
 #resume_tab{
   margin-bottom: 3vh;
+}
+
+#resume_tab div{
+  margin-bottom: 4vh;
 }
 
 @media only screen and (min-width: 1440px) {
