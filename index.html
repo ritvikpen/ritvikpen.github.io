@@ -4,51 +4,207 @@
     
     <meta charset="UTF-8">
     <title>Ritviksiddha Penchala</title>
-    
-    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700&display=swap" rel="stylesheet">
-	  <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
-    
-	  <link rel="stylesheet" href="css/bootstrap.min.css">
-	  <link rel="stylesheet" type = "text/css" href="css/animate.css">
-	  <link rel="stylesheet" href="css/main.css">
-	  <link rel="stylesheet" href="css/font-awesome/css/all.css">
+    <link rel="icon" type="image/png" href="res/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="res/img/favicon-16x16.png" sizes="16x16" />
 
-	  <script src="js/jquery-3.4.1.min.js"></script>
-	  
+    <link rel="stylesheet" type = "text/css" href="css/animate.css">
+    <link rel="stylesheet" type = "text/css" href="css/materialize.min.css">
+	  <link rel="stylesheet" type = "text/css" href="css/main.css">
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 15px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(73, 182, 255); 
+      }
+
+      /* Handle on hover
+      ::-webkit-scrollbar-thumb:hover{
+        background: rgb(0, 153, 255);
+      }
+      */
+      </style>
 	</head>
 	
 	<body>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="https://docs.google.com/document/d/1YwXzyNpqzfw6xpqNo32YKLcoQCQdwtn6qFgHdcZ16wU/edit?usp=sharing" target="_blank"> Resume</a>
-        <a href="contact.html">Contact</a>
+    
+    <div class="container">
+      <div class="row" id="landing">
+        <img class="col s12 xl6" src="res/img/landing_web_dev.svg">
+        <div class="col s12 xl6">
+          <h1 class="landing-text">Hi! I'm Ritvik.</h1>
+          <h4 class=" landing-text">I'm a student, developer, and aspiring medical professional.</h4>
+          
+          <h4 class="landing-text">Browse this website to:<br />
+           - learn more <a class="generallink" href="#about_tab">about me</a><br/>
+           - check out my <a class="generallink" href="#project_tab">projects</a></br>
+           - view my <a class="generallink" href="#resume_tab">resume</a><br/>
+           - or <a class="generallink" href="#contact_tab">contact me</a></h4>
+          
+        </div>
       </div>
     </div>
-    
-    <div class="container-icon" onclick="openNav()">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-    
-	  <header>
-	    <div class="container">
-        <h1 class="text-center mainTitle col-sm-12 animated fadeInDown">RI T </h1>
-        <h1 class="text-center mainTitle col-sm-12 animated fadeInUp">V IK</h1>
+
+    <img src="res/wave.svg" id="blue_wave">
+    <div class="blue_background">
+      <div class="container">
+        <div class="row" id="about_tab">
+          <img src="res/img/ritprofile.svg" class="col s12 m6 xl4 center">
+          <div class="col s12 xl8 white-text">
+            <h1>About Me</h1>
+            <h5>
+              First off, my actual name is Ritviksiddha Penchala, but it was too long to fit up top so I shortened it. Anyway, let's get into it.
+            </h5>
+            <h5>
+              I’m an 11th grader at Dublin high school. I am a member of my school’s Biomedical Academy and have a passion for the field of healthcare. I participate in numerous activities, both in and out of school, to further my knowledge for the medical field as well as skills that I think will be useful in that area. I am involved in a number of clubs that allow me to pursue my interest in the medical field, robotics, and a number of other topics.
+            </h5>
+            <h5>
+              I have been at Dublin High school for 3 years now and absolutely love it. It has enabled me to challenge myself academically and take the rigorous courses that I desire. Currently, I am enrolled in AP Biology, AP Calculus AB, AP Computer Science Applications, Honors Medical Interventions, Honors English, and U.S. History. I have a cumulative GPA of 4.5 and an SAT score of 1530. I’ve enjoyed my classes so far and look forward to Junior year. In addition to the academic opportunities here, I’ve involved myself in a number of clubs at Dublin High. I am a member of HOSA (Health Occupation Students of American, a programmer for Gael Force Robotics, and Vice-President of 2Serve.
+            </h5>
+          </div>
+        </div>
       </div>
-	  </header>
+    </div>
+    <img src="res/wave_inverse.svg" id="blue_wave_bottom">
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12" id="project_tab">
+
+          <h1>Projects</h1>
+          
+          <div class="row">
+            <img src="res/img/undraw_charts_jj6t.svg" class="col s12 m8 xl4 center">
+            <div class="col s12 xl8">
+              <h4>Parkinson's Algorithm</h4>
+              <h5><i>Developer from November 2017 - April 2018</i></h5>
+              <h5>
+                Algorithm developed in the R programming language for the Synopsys science fair. The algorithm performs statistical analysis on data about hand tremors displayed by Parkinson's patients in order to determine if their condition is getting better or worse.
+              </h5>
+            </div>
+          </div>
+          
+          <div class="row">
+            <img src="res/img/undraw_mobile_interface_wakp.svg" class="col s12 m8 xl4 center" id="tap_test_img">
+            <div class="col s12 xl8">
+              <h4>Tap Test App</h4>
+              <h5><i>Developer from August 2018 - December 2018</i></h5>
+              <h5>
+                An Android application created to assist a Stanford MedX research group in their work on Alzheimer's. The app provides assistance with the data collection and statistical analysis.
+              </h5>
+              <h5 class="project-links">
+                <a href="https://play.google.com/store/apps/details?id=com.tap.surenderpenchala.taptest&hl=en_US" target="_blank" class="generallink">View App</a> 
+              </h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="res/img/karate_site.svg" class="col s12 m8 xl4 center">
+            <div class="col s12 xl8">
+              <h4>WCWMA Pleasanton Website</h4>
+              <h5><i>Developer/Designer from August 2019 - Current</i></h5>
+              <h5>
+                A website to advertise for my local karate school: West World Martial Arts Pleasanton.
+              </h5>
+              <h5 class="project-links">
+                <a href="https://ritvikpen.github.io/WCWMA-Pleasanton-Site/about.html" target="_blank" class="generallink">View Site</a> 
+              </h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <img src="res/img/undraw_file_searching_duff.svg" class="col s12 m8 xl4 center">
+            <div class="col s12 xl8">
+              <h4>Community Project</h4>
+              <h5><i>Data Analyst and Writer from November 2019 - May 2020</i></h5>
+              <h5>
+                Group research was done on technology usage and its correlation to overall health and time management for our AP Biology class. Our local school students were surveyed and recommendations to improve their lifestyle were presented.
+              </h5>
+              <h5 class="project-links">
+                <i>Research Pending Publication</i> 
+              </h5>
+            </div>
+          </div>
+
+          <div class="row" id="gfr_site">
+            <img src="res/img/undraw_click_here_2li1.svg" class="col s12 m8 xl4 center">
+            <div class="col s12 xl8">
+              <h4>Gael Force Robotics Website</h4>
+              <h5><i>Lead Developer from 2017 - Current</i></h5>
+              <h5>
+                A website to showcase my robotics team (team 5327), provide resources for members, network to other VRC teams, and write in our team blog.
+              </h5>
+              <h5 class="project-links">
+                <a href="https://gaelforceroboticsdublin.github.io/" target = "_blank" class="generallink">View Site</a> 
+              </h5>
+            </div>
+          </div>
+
+          <div class="row" id="asdrp">
+            <img src="res/img/science.svg" class="col s12 m8 xl4 center">
+            <div class="col s12 xl8">
+              <h4>ASDRP Summer Research Program</h4>
+              <h5><i>Researcher during Summer 2020</i></h5>
+              <h5>
+                A Summer Research experience held at ASDRP in Fremont. Developed and conducted novel research under the supervision of professionals in the field of science 
+              </h5>
+              <h5 class="project-links">
+                <i>
+                Research Pending Publication
+                </i>
+              </h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <img src="res/wave.svg" id="blue_wave">
+    <div class="blue_background">
+      <div class="container">
+        <div class="row" id="resume_tab">
+          <div class="col s12 m5 white-text">
+            <h1>Resume</h1>
+            <h5>
+              Click <a class="generallink" href="https://docs.google.com/document/d/1YwXzyNpqzfw6xpqNo32YKLcoQCQdwtn6qFgHdcZ16wU/edit?usp=sharing" target="_blank">here</a> to view my resume.
+            </h5>
+          </div>
+          <img src="res/img/undraw_resume_1hqp.svg" class="col s12 m6 center">
+        </div>
+      </div>
+    </div>
+    <img src="res/wave_inverse.svg" id="blue_wave_bottom">
+
+    <div class="center">
+      <div class="container">
+        <div class="col s12" id="contact_tab">
+          <h1>Contact Me</h1>
+          
+          <h4>ritviksiddha@gmail.com</h4>
+          <h4>(408) 981 9355</h4>
+        </div>
+      </div>
+      <h4  id="bottom_link">
+        <a class="generallink" href="#">go back to the top</a>
+      </h4>
+    </div>
+
     
-    <!--
-	  <footer class="center">
-      <a href="contact.html" class=""><i class="far fa-envelope"></i></a>
-      <a href= "#" class=""><i class="fab fa-github-square"></i></a>
-      <a href= "#" class=""><i class="fab fa-instagram"></i></a>
-    </footer>
-	  -->
+    <script src="js/materialize.min.js"></script>
 	  <script src="js/index.js"></script>
 	</body>
 
