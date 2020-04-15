@@ -7,11 +7,12 @@
     <link rel="icon" type="image/png" href="res/img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="res/img/favicon-16x16.png" sizes="16x16" />
 
-    <link rel="stylesheet" type = "text/css" href="css/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type = "text/css" href="css/materialize.min.css">
 	  <link rel="stylesheet" type = "text/css" href="css/main.css">
 
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
@@ -47,7 +48,12 @@
         <div class="col s12 xl6">
           <h1 class="landing-text">Hi! I'm Ritvik.</h1>
           <h4 class=" landing-text">I'm a student, developer, and aspiring medical professional.</h4>
-          <h4 class="landing-text">Learn more <a class="generallink" href="#about_tab">about me</a>.</h4>
+          <h4 class="landing-text">
+            Learn more <a class="generallink" href="#about_tab">about me</a>. <br />
+            Check out my <a class="generallink" href="#project_tab">experience</a>.</br>
+            View my <a class="generallink" href="#resume_tab">resume</a>.<br/>
+            Or <a class="generallink" href="#contact_tab">contact me</a>.</h4>
+          </h4>
 
           <!---          <h4 class="landing-text">Browse this website to:<br />
            - learn more <a class="generallink" href="#about_tab">about me</a><br/>
@@ -87,24 +93,25 @@
       <div class="row">
         <div class="col s12" id="project_tab">
 
-          <h1>Projects</h1>
+          <h1>Experience</h1>
           
           <div class="row">
-            <img src="res/img/undraw_charts_jj6t.svg" class="col s12 m8 xl4 center">
+            <img src="res/img/undraw_charts_jj6t.svg" class="col s12 m8 xl4 center" data-aos="fade-up">
             <div class="col s12 xl8">
               <h4>Parkinson's Algorithm</h4>
               <h5><i>Developer from November 2017 - April 2018</i></h5>
               <h5>
-                Algorithm developed in the R language for the Alameda science fair. It performs statistical analysis on the hand tremors of Parkinson's patients to determine if their condition is getting better or worse.
+                An algorithm developed in the R language that won 1st place at the Alameda County Science Fair. It performs statistical analysis on the hand tremors of Parkinson's patients to determine if their condition is getting better or worse.
               </h5>
               <h5 class="project-links">
-                <i>Research Pending Publication</i> 
+                <a class="generallink" href="https://docs.google.com/document/d/1IoekCG3no2OSVWdrILxe46UQ8Lt0ame2lE9iXe3BdDQ/edit?usp=sharing" target="_blank">View Report</a> ||
+                  <a class="generallink" href="https://docs.google.com/presentation/d/1gKMSfEw7i6QRQszp9UJoTvN3t5s02DPfmvx4g8fBboA/edit?usp=sharing">View Presentation</a>
               </h5>
             </div>
           </div>
-          
+
           <div class="row">
-            <img src="res/img/undraw_mobile_interface_wakp.svg" class="col s12 m8 xl4 center" id="tap_test_img">
+            <img src="res/img/undraw_mobile_interface_wakp.svg" class="col s12 m8 xl4 center" id="tap_test_img"  data-aos="fade-up">
             <div class="col s12 xl8">
               <h4>Tap Test App</h4>
               <h5><i>Developer from August 2018 - December 2018</i></h5>
@@ -117,8 +124,22 @@
             </div>
           </div>
 
+          <div class="row" id="gfr_site">
+            <img src="res/img/undraw_click_here_2li1.svg" class="col s12 m8 xl4 center"  data-aos="fade-up">
+            <div class="col s12 xl8">
+              <h4>Gael Force Robotics Website</h4>
+              <h5><i>Lead Developer from November 2018 - Current</i></h5>
+              <h5>
+                A website to showcase my robotics team (team 5327), provide resources for members, network to other VRC teams, and write in our team blog.
+              </h5>
+              <h5 class="project-links">
+                <a href="https://gaelforceroboticsdublin.github.io/" target = "_blank" class="generallink">View Site</a> 
+              </h5>
+            </div>
+          </div>
+
           <div class="row">
-            <img src="res/img/karate_site.svg" class="col s12 m8 xl4 center">
+            <img src="res/img/karate_site.svg" class="col s12 m8 xl4 center"  data-aos="fade-up">
             <div class="col s12 xl8">
               <h4>WCWMA Pleasanton Website</h4>
               <h5><i>Developer/Designer from August 2019 - Current</i></h5>
@@ -132,7 +153,7 @@
           </div>
 
           <div class="row">
-            <img src="res/img/undraw_file_searching_duff.svg" class="col s12 m8 xl4 center">
+            <img src="res/img/undraw_file_searching_duff.svg" class="col s12 m8 xl4 center"  data-aos="fade-up">
             <div class="col s12 xl8">
               <h4>Community Project</h4>
               <h5><i>Data Analyst and Writer from November 2019 - May 2020</i></h5>
@@ -145,22 +166,8 @@
             </div>
           </div>
 
-          <div class="row" id="gfr_site">
-            <img src="res/img/undraw_click_here_2li1.svg" class="col s12 m8 xl4 center">
-            <div class="col s12 xl8">
-              <h4>Gael Force Robotics Website</h4>
-              <h5><i>Lead Developer from 2017 - Current</i></h5>
-              <h5>
-                A website to showcase my robotics team (team 5327), provide resources for members, network to other VRC teams, and write in our team blog.
-              </h5>
-              <h5 class="project-links">
-                <a href="https://gaelforceroboticsdublin.github.io/" target = "_blank" class="generallink">View Site</a> 
-              </h5>
-            </div>
-          </div>
-
           <div class="row" id="asdrp">
-            <img src="res/img/science.svg" class="col s12 m8 xl4 center">
+            <img src="res/img/science.svg" class="col s12 m8 xl4 center"  data-aos="fade-up">
             <div class="col s12 xl8">
               <h4>ASDRP Summer Research Program</h4>
               <h5><i>Researcher during Summer 2020</i></h5>
@@ -210,8 +217,9 @@
     </div>
 
     
-    <script src="js/materialize.min.js"></script>
-	  <script src="js/index.js"></script>
+    <script>
+      AOS.init();
+    </script>
 	</body>
 
 </html>
