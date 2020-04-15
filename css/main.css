@@ -78,6 +78,10 @@ html{
   margin-bottom: 10vh;
 }
 
+#contact_tab div{
+  margin-bottom: 4vh;
+}
+
 #resume_tab{
   margin-bottom: 3vh;
 }
@@ -93,6 +97,15 @@ html{
   }  
 
   #resume_tab div{
+    margin-top: 18vh;
+    padding-right: 6vw;
+  }
+
+  #contact_tab{
+    text-align: right;
+  }  
+
+  #contact_tab div{
     margin-top: 18vh;
     padding-right: 6vw;
   }
