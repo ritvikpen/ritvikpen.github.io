@@ -88,6 +88,12 @@ html{
   margin-bottom: 6vh;
 }
 
+@media only screen and (min-width: 1024px) {
+
+  .exp_title{
+    margin-top: 5vh;
+  }
+}
 
 /* Specific Stuff */
 #blue_wave{
@@ -141,4 +147,26 @@ html{
 
 #bottom_link{
   margin-bottom: 10vh;
+}
+
+/*Floating Back-To-Top Button*/
+#myBtn {
+  color: black;
+  position: fixed;
+  bottom: 10px;
+  float: right;
+  right: 5.5%;
+  max-width: 40px;
+  width: 100%;
+  font-size: 24px;
+  border-color: rgba(85, 85, 85, 0.2);
+  background-color: white;
+  padding: .5px;
+  border-radius: 25px;
+
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+  background-color: black;
+  color: white
 }
