@@ -62,6 +62,21 @@ html{
   font-size: 80%;
 }
 
+@media only screen and (max-width: 450px) {
+  html{
+    font-size: 70%;
+  }
+}
+
+/* Hide short text by default (resolution > 1200px)*/
+.short-text { display: none; }
+
+/* When resolution <= 1200px, hide full text and show short text */
+@media (max-width: 450px) {
+    .short-text { display: inline-block; }
+    .full-text { display: none; }
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
