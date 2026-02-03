@@ -5,6 +5,7 @@ const NAV_LINKS = [
   { label: "Home", href: "#hero" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Volunteering", href: "#volunteering" },
 ] as const;
 
 export function Navbar() {
@@ -44,7 +45,7 @@ export function Navbar() {
           href="#hero"
           className="text-base font-medium text-foreground transition-colors hover:text-primary"
         >
-          R<span className="text-primary">.</span>P<span className="text-primary">.</span>
+          R<span className="text-primary"></span>P<span className="text-primary"></span>
         </a>
 
         {/* Desktop */}

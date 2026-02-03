@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Experience } from "@/components/Experience";
 import { Projects } from "@/components/Projects";
+import { Volunteering } from "@/components/Volunteering";
 import { Footer } from "@/components/Footer";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
@@ -14,6 +15,7 @@ export default function App() {
       <Hero />
       <Experience />
       <Projects />
+      <Volunteering />
       <Footer />
     </div>
   );

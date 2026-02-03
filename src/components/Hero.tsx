@@ -18,7 +18,7 @@ export function Hero() {
       <div className="my-auto mx-auto w-full max-w-4xl">
         {/* Terminal prompt + name */}
         <div className="animate-in delay-1">
-          <p className="prompt text-base text-muted-foreground">whoami</p>
+          <p className="prompt mb-3 text-base text-muted-foreground">whoami</p>
           <h1 className="mt-4 text-4xl font-medium leading-tight text-foreground sm:text-5xl lg:text-6xl">
             Ritviksiddha Penchala
           </h1>
@@ -26,16 +26,19 @@ export function Hero() {
 
         {/* Education and role with labels */}
         <div className="animate-in delay-2 mt-6 space-y-1">
-          <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">
-            <span className="text-primary">Education:</span>{" "}
-            B.S. Computer Science{/* &amp; Bioinformatics*/},{" "}
-            <span className="text-foreground">UC San Diego</span>
-          </p>
+
           <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">
             <span className="text-primary">Current Role:</span>{" "}
             Data Science Specialist @{" "}
             <span className="text-foreground">UC San Francisco</span>
           </p>
+
+          <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">
+            <span className="text-primary">Education:</span>{" "}
+            B.S. Computer Science{/* &amp; Bioinformatics*/},{" "}
+            <span className="text-foreground">UC San Diego</span>
+          </p>
+          
         </div>
 
         {/* Quick contact with icons */}
@@ -69,7 +72,7 @@ export function Hero() {
 
         {/* Skills */}
         <div className="animate-in delay-4 mt-8">
-          <p className="prompt mb-4 text-base text-muted-foreground">skills --list</p>
+          <p className="prompt mb-4 text-base text-muted-foreground">echo skills</p>
           <div className="flex flex-wrap gap-2">
             {SKILLS.map((skill) => (
               <Badge
@@ -88,7 +91,7 @@ export function Hero() {
 
         {/* Resume */}
         <div className="animate-in delay-5 mt-8">
-          <p className="prompt mb-3 text-base text-muted-foreground">cat resume</p>
+          <p className="prompt mb-3 text-base text-muted-foreground">view resume</p>
           <a
             href="/resume.pdf"
             target="_blank"

@@ -13,36 +13,36 @@ const ROLES: Role[] = [
     company: "UC San Francisco",
     title: "Data Science Specialist",
     period: "Oct 2025 - Present",
-    summary: "Working on LLM evaluation for public health research. Built ML pipelines for survey modeling and an LLM-as-a-Judge scoring framework.",
-    tags: ["LLMs", "NLP", "Public Health"],
+    summary: "Investigating large language models in the context of public health and healthcare. Assessed models for policy biases in a simulated pandemic. Implemented an LLM-as-a-Judge pipeline for automated scoring of model reasoning in public health tasks.",
+    tags: ["LLMs", "Machine Learning", "Health Data Science"],
   },
   {
     company: "UC San Diego",
     title: "Research Data Analyst",
     period: "Jul 2022 - Dec 2024",
-    summary: "Analyzed 100K+ participant datasets for Opium Use Disorder risk factors. Also worked on proteomic analysis for immunological research.",
-    tags: ["Python", "R", "Bioinformatics"],
-  },
-  {
-    company: "Kaiser Permanente",
-    title: "Data Engineering Intern",
-    period: "Jun - Sep 2023",
-    summary: "Helped modernize EHR infrastructure for 8M+ patients. Automated legacy database migration using PySpark on Azure Databricks.",
-    tags: ["PySpark", "SQL", "Azure"],
+    summary: "Developed Machine Learning models to analyze an 100K+ participant dataset for Opioid Use Disorder risk factors. Also, worked on proteomic analysis pipelines for immunological research. Presented findings at the 7th International Conference on Microbiome Engineering (AIChE).",
+    tags: ["Python", "R", "Machine Learning", "Bioinformatics"],
   },
   {
     company: "CAIDA",
     title: "Web Development Intern",
     period: "Jan 2023 - Dec 2024",
-    summary: "Maintained a research site with 10K+ monthly visitors. Added REST API integrations and improved site accessibility.",
-    tags: ["JavaScript", "HUGO", "REST APIs"],
+    summary: "Maintained and enhanced the CAIDA research website, improving accessibility and performance for 10K+ monthly visitors. Developed responsive UI features using JavaScript, HUGO, and jQuery for dynamic data-driven content. Implemented REST API integrations to modernize static pages.",
+    tags: ["JavaScript", "HUGO", "jQuery", "REST APIs"],
+  },
+  {
+    company: "Kaiser Permanente",
+    title: "Data Engineering Intern",
+    period: "Jun - Sep 2023",
+    summary: "Contributed to the modernization of an Electronic Health Record system serving 8M+ patients. Automated large-scale data migration from legacy systems using PySpark and SQL on Azure Databricks. Designed Python testing scripts to ensure data quality, validation, and pipeline integrity.",
+    tags: ["PySpark", "SQL", "Azure Databricks", "Python"],
   },
   {
     company: "NonExomics",
-    title: "Data Engineering Intern",
+    title: "Software Engineering Intern",
     period: "Mar - Sep 2022",
-    summary: "Built genomic analysis pipelines on AWS to find non-exomic regions linked to carcinogenesis.",
-    tags: ["Python", "AWS", "Genomics"],
+    summary: "Built scalable genomic analysis pipelines in Python and Bash to identify non-exomic variants linked to cancer. Leveraged AWS-based distributed computing for high-throughput genomic processing. Contributed to early-stage infrastructure supporting large-scale cancer genomics research.",
+    tags: ["Python", "Bash", "AWS", "Genomics"],
   },
 ];
 
@@ -50,11 +50,11 @@ export function Experience() {
   return (
     <section
       id="experience"
-      className="relative flex min-h-[100svh] flex-col justify-center border-t border-border px-6 py-20 lg:px-8"
+      className="border-t border-border px-6 py-20 lg:px-8"
     >
       <div className="mx-auto w-full max-w-4xl">
         <div className="reveal">
-          <p className="prompt text-base text-muted-foreground">experience --all</p>
+          <p className="prompt text-base text-muted-foreground">ls ~/experiences</p>
         </div>
 
         <div className="mt-8 space-y-0 stagger">
