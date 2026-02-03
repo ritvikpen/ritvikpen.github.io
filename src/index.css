@@ -1,0 +1,212 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-mono: "DM Mono", "Menlo", monospace;
+}
+
+/* ── Light theme ── */
+:root {
+  --radius: 0.5rem;
+  --background: #FAFAFA;
+  --foreground: #171717;
+  --card: #FFFFFF;
+  --card-foreground: #171717;
+  --popover: #FFFFFF;
+  --popover-foreground: #171717;
+  --primary: #16A34A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F5F5F5;
+  --secondary-foreground: #171717;
+  --muted: #F5F5F5;
+  --muted-foreground: #6B7280;
+  --accent: #16A34A;
+  --accent-foreground: #FFFFFF;
+  --destructive: #EF4444;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: rgba(0, 0, 0, 0.1);
+  --ring: #16A34A;
+  --chart-1: #16A34A;
+  --chart-2: #171717;
+  --chart-3: #6B7280;
+  --chart-4: #F5F5F5;
+  --chart-5: #FFFFFF;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #171717;
+  --sidebar-primary: #16A34A;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F5F5F5;
+  --sidebar-accent-foreground: #171717;
+  --sidebar-border: rgba(0, 0, 0, 0.1);
+  --sidebar-ring: #16A34A;
+}
+
+/* ── Dark theme ── */
+.dark {
+  --radius: 0.5rem;
+  --background: #0A0A0A;
+  --foreground: #E5E5E5;
+  --card: #141414;
+  --card-foreground: #E5E5E5;
+  --popover: #141414;
+  --popover-foreground: #E5E5E5;
+  --primary: #22C55E;
+  --primary-foreground: #0A0A0A;
+  --secondary: #1A1A1A;
+  --secondary-foreground: #E5E5E5;
+  --muted: #1A1A1A;
+  --muted-foreground: #737373;
+  --accent: #22C55E;
+  --accent-foreground: #0A0A0A;
+  --destructive: #EF4444;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.08);
+  --ring: #22C55E;
+  --chart-1: #22C55E;
+  --chart-2: #E5E5E5;
+  --chart-3: #737373;
+  --chart-4: #1A1A1A;
+  --chart-5: #141414;
+  --sidebar: #141414;
+  --sidebar-foreground: #E5E5E5;
+  --sidebar-primary: #22C55E;
+  --sidebar-primary-foreground: #0A0A0A;
+  --sidebar-accent: #1A1A1A;
+  --sidebar-accent-foreground: #E5E5E5;
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --sidebar-ring: #22C55E;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-mono antialiased text-[16px] leading-relaxed;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+  ::selection {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--background); }
+::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 2px; }
+
+/* ── Nav ── */
+.nav-glass {
+  background: color-mix(in srgb, var(--background) 90%, transparent);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.stagger > .reveal:nth-child(1) { transition-delay: 0ms; }
+.stagger > .reveal:nth-child(2) { transition-delay: 60ms; }
+.stagger > .reveal:nth-child(3) { transition-delay: 120ms; }
+.stagger > .reveal:nth-child(4) { transition-delay: 180ms; }
+.stagger > .reveal:nth-child(5) { transition-delay: 240ms; }
+.stagger > .reveal:nth-child(6) { transition-delay: 300ms; }
+
+/* ── Terminal prompt ── */
+.prompt::before {
+  content: "$ ";
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* ── Cursor blink ── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.cursor-blink {
+  display: inline-block;
+  width: 8px;
+  height: 1.1em;
+  background: var(--primary);
+  margin-left: 4px;
+  vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+}
+
+/* ── Landing fade-in ── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-in {
+  opacity: 0;
+  animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.25s; }
+.delay-3 { animation-delay: 0.4s; }
+.delay-4 { animation-delay: 0.55s; }
+.delay-5 { animation-delay: 0.7s; }
+
+/* ── Bounce ── */
+@keyframes bounce-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+@keyframes bounce-up {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.bounce-down { animation: bounce-down 1.5s ease-in-out infinite; }
+.bounce-up { animation: bounce-up 1.5s ease-in-out infinite; }
