@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { Sun, Moon } from "lucide-react";
 
 const NAV_LINKS = [
@@ -33,7 +32,7 @@ export function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 px-6 lg:px-8 transition-all duration-300 ${
-        scrolled ? "nav-glass border-b border-border" : ""
+        scrolled || open ? "nav-glass border-b border-border" : ""
       }`}
     >
       <div
@@ -77,30 +76,42 @@ export function Navbar() {
           >
             {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
-          <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger asChild>
-              <button className="flex flex-col gap-[5px] p-2" aria-label="Menu">
-                <span className="block h-[1.5px] w-5 bg-foreground" />
-                <span className="block h-[1.5px] w-3 bg-primary" />
-                <span className="block h-[1.5px] w-5 bg-foreground" />
-              </button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-64 border-border bg-background">
-              <SheetTitle className="sr-only">Navigation</SheetTitle>
-              <div className="mt-16 flex flex-col gap-6">
-                {NAV_LINKS.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setOpen(false)}
-                    className="text-2xl font-medium text-foreground transition-colors hover:text-primary"
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </div>
-            </SheetContent>
-          </Sheet>
+          <button
+            className="flex flex-col gap-[5px] p-2"
+            aria-label="Menu"
+            onClick={() => setOpen(!open)}
+          >
+            <span
+              className={`block h-[1.5px] w-5 bg-foreground transition-all duration-200 ${
+                open ? "translate-y-[3.5px] rotate-45" : ""
+              }`}
+            />
+            <span
+              className={`block h-[1.5px] bg-primary transition-all duration-200 ${
+                open ? "w-5 -translate-y-[3.5px] -rotate-45" : "w-3"
+              }`}
+            />
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile dropdown */}
+      <div
+        className={`mx-auto max-w-4xl overflow-hidden transition-all duration-300 md:hidden ${
+          open ? "max-h-60 pb-4" : "max-h-0"
+        }`}
+      >
+        <div className="flex flex-col gap-4">
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className="text-[13px] uppercase tracking-[0.15em] text-muted-foreground transition-colors hover:text-primary"
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
       </div>
     </nav>

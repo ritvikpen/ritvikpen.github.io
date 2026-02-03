@@ -50,7 +50,7 @@ export function Experience() {
   return (
     <section
       id="experience"
-      className="relative flex h-[100svh] flex-col justify-center border-t border-border px-6 lg:px-8"
+      className="relative flex min-h-[100svh] flex-col justify-center border-t border-border px-6 py-20 lg:px-8"
     >
       <div className="mx-auto w-full max-w-4xl">
         <div className="reveal">

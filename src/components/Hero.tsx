@@ -4,7 +4,7 @@ import { Mail, Github, Linkedin, ChevronDown } from "lucide-react";
 const SKILLS = [
   "Python", "C++", "Java", "SQL", "R", "JavaScript",
   "PyTorch", "TensorFlow", "Scikit-Learn", "Pandas", "Spark",
-  "React", "Node.js", "Docker", 
+  "React", "Node.js", "Docker",
   "Kubernetes", "AWS", "Azure",
   "Machine Learning", "NLP", "Computer Vision"
 ];
@@ -13,9 +13,9 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[100svh] flex-col justify-center px-6 lg:px-8"
+      className="flex min-h-[100svh] flex-col px-6 pt-20 pb-8 lg:px-8"
     >
-      <div className="mx-auto w-full max-w-4xl">
+      <div className="my-auto mx-auto w-full max-w-4xl">
         {/* Terminal prompt + name */}
         <div className="animate-in delay-1">
           <p className="prompt text-base text-muted-foreground">whoami</p>
@@ -28,7 +28,7 @@ export function Hero() {
         <div className="animate-in delay-2 mt-6 space-y-1">
           <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">
             <span className="text-primary">Education:</span>{" "}
-            B.S. Computer Science &amp; Bioinformatics,{" "}
+            B.S. Computer Science {/* &amp; Bioinformatics*/},{" "}
             <span className="text-foreground">UC San Diego</span>
           </p>
           <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">
@@ -103,7 +103,7 @@ export function Hero() {
       {/* Scroll indicator */}
       <a
         href="#experience"
-        className="animate-in delay-5 absolute bottom-8 left-1/2 -translate-x-1/2 text-center text-muted-foreground/50 transition-colors hover:text-primary"
+        className="animate-in delay-5 mx-auto mt-8 hidden shrink-0 text-center text-muted-foreground/50 transition-colors hover:text-primary md:block"
       >
         <p className="text-[12px] uppercase tracking-[0.2em]">
           scroll
