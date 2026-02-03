@@ -33,7 +33,7 @@ export function Volunteering() {
     >
       <div className="mx-auto w-full max-w-4xl">
         <div className="reveal">
-          <p className="prompt text-base text-muted-foreground">grep volunteering</p>
+          <p className="prompt text-base text-muted-foreground">ls volunteering</p>
         </div>
 
         <div className="mt-8 space-y-0 stagger">

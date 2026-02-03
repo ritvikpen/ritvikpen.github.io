@@ -45,7 +45,7 @@ export function Navbar() {
           href="#hero"
           className="font-mono text-base font-medium text-foreground transition-colors hover:text-primary"
         >
-          <span className="text-primary">$</span> rp
+          <span className="text-primary">&gt;</span>rp
         </a>
 
         {/* Desktop */}

@@ -54,7 +54,7 @@ export function Experience() {
     >
       <div className="mx-auto w-full max-w-4xl">
         <div className="reveal">
-          <p className="prompt text-base text-muted-foreground">ls ~/experiences</p>
+          <p className="prompt text-base text-muted-foreground">ls experience</p>
         </div>
 
         <div className="mt-8 space-y-0 stagger">

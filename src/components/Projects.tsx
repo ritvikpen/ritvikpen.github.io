@@ -39,7 +39,7 @@ export function Projects() {
     >
       <div className="mx-auto w-full max-w-4xl">
         <div className="reveal">
-          <p className="prompt text-base text-muted-foreground">tree projects/</p>
+          <p className="prompt text-base text-muted-foreground">ls projects</p>
         </div>
 
         <div className="mt-8 space-y-0 stagger">
