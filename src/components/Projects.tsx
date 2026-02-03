@@ -26,7 +26,7 @@ const PROJECTS: Project[] = [
     title: "NLP for Low-Resource Languages",
     period: "Mar - Jun 2024",
     description:
-      "Fine-tuned and retrained LLM models (mBERT and PEGASUS) with custom encoders for low-resource languages. Achieved accuracy exceeding >70%, showing strong multilingual performance improvements.",
+      "Fine-tuned and retrained LLM models (mBERT and PEGASUS) with custom encoders for low-resource languages. Achieved accuracy exceeding 70%, showing strong multilingual performance improvements.",
     tags: ["NLP", "mBERT", "PEGASUS", "Multilingual"],
   },
 ];

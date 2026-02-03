@@ -35,7 +35,7 @@ export function Hero() {
 
           <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">
             <span className="text-primary">Education:</span>{" "}
-            B.S. Computer Science{/* &amp; Bioinformatics*/},{" "}
+            B.S. Computer Science{/* &amp; Bioinformatics*/} @ {" "}
             <span className="text-foreground">UC San Diego</span>
           </p>
           
