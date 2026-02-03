@@ -28,12 +28,12 @@ export function Hero() {
         <div className="animate-in delay-2 mt-6 space-y-1">
           <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">
             <span className="text-primary">Education:</span>{" "}
-            B.S. Computer Science {/* &amp; Bioinformatics*/},{" "}
+            B.S. Computer Science{/* &amp; Bioinformatics*/},{" "}
             <span className="text-foreground">UC San Diego</span>
           </p>
           <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">
             <span className="text-primary">Current Role:</span>{" "}
-            Data Science Specialist at{" "}
+            Data Science Specialist @{" "}
             <span className="text-foreground">UC San Francisco</span>
           </p>
         </div>
