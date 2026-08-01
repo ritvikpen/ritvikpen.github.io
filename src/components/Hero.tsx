@@ -86,10 +86,9 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Divider */}
+        {/*
         <div className="animate-in delay-5 mt-8 h-px w-full bg-border" />
 
-        {/* Resume */}
         <div className="animate-in delay-5 mt-8">
           <p className="prompt mb-3 text-base text-muted-foreground">view resume</p>
           <a
@@ -101,6 +100,7 @@ export function Hero() {
             resume.pdf
           </a>
         </div>
+        */}
       </div>
 
       {/* Scroll indicator */}

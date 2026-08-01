@@ -11,15 +11,15 @@ interface Role {
 const ROLES: Role[] = [
   {
     company: "UC San Francisco",
-    title: "Data Science Specialist",
-    period: "Oct 2025 - Present",
+    title: "Junior Specialist",
+    period: "Sep 2025 - Present",
     summary: "Investigating large language models in the context of public health and healthcare. Assessed models for policy biases in a simulated pandemic. Implemented an LLM-as-a-Judge pipeline for automated scoring of model reasoning in public health tasks.",
     tags: ["LLMs", "Machine Learning", "Health Data Science"],
   },
   {
     company: "UC San Diego",
-    title: "Research Data Analyst",
-    period: "Jul 2022 - Dec 2024",
+    title: "Research Assistant",
+    period: "Sep 2022 - Dec 2024",
     summary: "Developed Machine Learning models to analyze an 100K+ participant dataset for Opioid Use Disorder risk factors. Also, worked on proteomic analysis pipelines for immunological research. Presented findings at the 7th International Conference on Microbiome Engineering (AIChE).",
     tags: ["Python", "R", "Machine Learning", "Bioinformatics"],
   },
@@ -39,8 +39,8 @@ const ROLES: Role[] = [
   },
   {
     company: "NonExomics",
-    title: "Software Engineering Intern",
-    period: "Mar - Sep 2022",
+    title: "Data Engineering Intern",
+    period: "Jun - Sep 2022",
     summary: "Built scalable genomic analysis pipelines in Python and Bash to identify non-exomic variants linked to cancer. Leveraged AWS-based distributed computing for high-throughput genomic processing. Contributed to early-stage infrastructure supporting large-scale cancer genomics research.",
     tags: ["Python", "Bash", "AWS", "Genomics"],
   },

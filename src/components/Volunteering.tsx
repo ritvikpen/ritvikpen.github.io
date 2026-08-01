@@ -12,14 +12,14 @@ const VOLUNTEER_ROLES: VolunteerRole[] = [
   {
     organization: "Undergraduate Bioinformatics Club @ UCSD",
     title: "Board Member",
-    period: "Oct 2021 - Jun 2024",
+    period: "Dec 2021 - Jun 2024",
     summary: "Served as Workshop Chair and Webmaster. Designed and taught curriculum to introduce students to Bioinformatics. Also tasked with the maintanence and continual updates of the club website.",
     tags: ["Teaching", "Web Development", "Bioinformatics"],
   },
   {
     organization: "Saltman Quarterly @ UCSD",
     title: "Webmaster",
-    period: "Oct 2022 - Jun 2024",
+    period: "Jan 2022 - Jun 2024",
     summary: "Maintained the Saltman Quarterly Online website and developed new features. Coordinated with the Web Team to tackle assigned tasks and develop publication timelines for new student articles.",
     tags: ["Web Development", "Science Communication"],
   },

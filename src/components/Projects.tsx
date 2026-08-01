@@ -10,7 +10,7 @@ interface Project {
 const PROJECTS: Project[] = [
   {
     title: "Infant & Maternal Health in Latinx Populations",
-    period: "Aug 2024 - Present",
+    period: "Jun 2024 - Present",
     description:
       "Used CDC data to identify novel predictors of maternal and infant health outcomes in Latinx communities. Presented research findings at Pediatric Academic Societies and American Academy of Pediatrics.",
     tags: ["Python", "R", "SAS", "Public Health"],
